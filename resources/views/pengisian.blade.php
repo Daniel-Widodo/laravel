@@ -2,17 +2,20 @@
 
 @section('content')
 <div class="container">
-    <h1>Pengisian Questioner : *nama_mahasiswa* </h1>
+    <h1>Pengisian Questioner : {{$user->name}} </h1>
     <hr>
     <div class="row">
         <div class="col-md-3">
           <h3>Matakuliah</h3>
-          <button type="button" class="btn btn-secondary disabled btn-block">Studi Budaya Indonesia 2</button>
-          <button type="button" class="btn btn-secondary disabled btn-block">Bahasa Indonesia</button>
-          <button type="button" class="btn btn-success btn-block"> Gambar Bentuk </button>
-          <button type="button" class="btn btn-success btn-block"> Nirmana Dwimatra 1 </button>
-          <button type="button" class="btn btn-success btn-block"> Nirmana Trimatra 1 </button>
-          <button type="button" class="btn btn-success btn-block"> Berpikir Kreatif & Estetika Dasar </button>
+          @foreach ($pengisians as $pengisian)
+              @if ($pengisian->status == '1')
+                  <button type="button" class="btn btn-secondary disabled btn-block">{{$pengisian->matakuliah}} <i class="material-icons" style="font-size: 16px">check</i></button>
+              @endif
+              @if ($pengisian->status == '0')
+                  <button type="button" class="btn btn-success btn-block">{{$pengisian->matakuliah}}</button>
+              @endif
+
+          @endforeach
         </div>
 
         <div class="col-md-9">

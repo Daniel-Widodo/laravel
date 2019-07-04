@@ -24,24 +24,26 @@
                         </tr>
                       </thead>
                       <tbody>
+                      @foreach ($users as $key=>$user)
                         <tr>
-                          <th scope="row">1</th>
-                          <td>16043079005</td>
-                          <td>Daniel Christianto Widodo</td>
-                          <td><i class="material-icons" style="color:green">check_circle</i></td>
+                          <th scope="row">{{ ++$key }}</th>
+                          <td>{{$user->nim}}</td>
+                          <td>{{$user->name}}</td>
+                          @switch($user->pengerjaan)
+                              @case(1)
+                                  <td><i class="material-icons" style="color:black">check_circle</i></td>
+                                  @break
+                              @case(2)
+                                  <td><i class="material-icons" style="color:gray">info</i></td>
+                                  @break
+                              @default
+                                  <td><i class="material-icons" style="color:orange">remove_circle</i></td>
+                          @endswitch
                         </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>16043079056</td>
-                          <td>Thornton Ediffien</td>
-                          <td><i class="material-icons" style="color:red">remove_circle</i></td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>15043079009</td>
-                          <td>Gandar Sari Polulo</td>
-                          <td><i class="material-icons" style="color:green">check_circle</i></td>
-                        </tr>
+                      @endforeach
+
+
+
                       </tbody>
                     </table>
 
@@ -53,11 +55,11 @@
 
                     </div>
                     <div class="col-md-3" align="right">
-                      <h1 class="display-3">60%</h1>
+                      <h1 class="display-3">{{$count/$user_count*100}}%</h1>
                     </div>
                     <div class="col-md-2"><br>
-                      Total Mahasiswa : 113 <br>
-                      Total Pengisi : 66
+                      Responden : {{$count}}<br>
+                      Total Mahasiswa : {{$user_count}} 
                     </div>
                   </div>
                 </div>

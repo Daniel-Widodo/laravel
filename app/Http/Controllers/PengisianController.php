@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Matakuliah;
+use App\Pengisian;
 use Illuminate\Http\Request;
 
 class PengisianController extends Controller
@@ -14,7 +15,9 @@ class PengisianController extends Controller
      */
     public function index()
     {
-        return view('pengisian');
+        $user = \Auth::user();
+        $pengisians = Pengisian::where('user_id','=','1')->get();
+        return view('pengisian',['user' => $user, 'pengisians' => $pengisians]);
     }
 
     /**
