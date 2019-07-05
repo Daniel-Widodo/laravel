@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Pengisian Questioner : {{$user->name}} </h1>
+    <h1>Pengisian Questioner : **</h1>
     <hr>
     <div class="row">
         <div class="col-md-3">
