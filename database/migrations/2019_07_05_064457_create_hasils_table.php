@@ -30,6 +30,8 @@ class CreateHasilsTable extends Migration
             $table->smallInteger('q10')->default(0);
             $table->smallInteger('qtot')->default(0);
             $table->smallInteger('qcount')->default(0);
+            $table->decimal('qavg', 3, 2)->default(0);
+
         });
     }
 

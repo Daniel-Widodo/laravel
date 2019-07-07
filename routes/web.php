@@ -20,4 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mahasiswa', 'MahasiswaController@index')->name('mahasiswa');
 Route::get('/pengisian', 'PengisianController@index')->name('pengisian');
+Route::get('/pengisian/{pengisian_id}', 'PengisianController@index')->name('pengisian_selanjutnya');
 Route::get('/hasil', 'HasilController@index')->name('hasil');
+
+Route::put('/pengisian/{pengisian_id}', 'PengisianController@store')->name('input_pengisian');
+
+
+Route::get('/seed', 'MahasiswaSeedController@seedMahasiswa')->name('seed');

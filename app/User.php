@@ -36,4 +36,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    protected $attributes = [
+        'password' => '$2y$10$NkSM3ydbc5Cuq5PUJmIXhu33mkW3o/kKaR6MuD6TFVblLBhkilRfq', //1234
+        'tl' => '1995-01-01',
+        'pengerjaan' => '0',
+    ];
+
+    /**
+     * RELASI
+     * memiliki relasi dengan pengisian
+     * 
+     */
+    public function pengisian()
+    {
+        return $this->hasMany('App\Pengisian');
+    }
 }
