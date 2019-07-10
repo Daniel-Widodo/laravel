@@ -8,11 +8,13 @@ use Illuminate\Http\Request;
 
 class PengisianController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+
+    public function index()
+    {
+    }
+
+    /*
     public function index()
     {
         $user = \Auth::user();
@@ -26,12 +28,8 @@ class PengisianController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
+    
     public function store(Request $request)
     {
         //
@@ -65,5 +63,6 @@ class PengisianController extends Controller
         else
             return redirect()->route('pengisian');
     }
+    */
 
 }
