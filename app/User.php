@@ -43,6 +43,8 @@ class User extends Authenticatable
         'pengerjaan' => '0',
     ];
 
+
+
     /**
      * RELASI
      * memiliki relasi dengan pengisian

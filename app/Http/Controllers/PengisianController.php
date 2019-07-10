@@ -15,26 +15,15 @@ class PengisianController extends Controller
      */
     public function index()
     {
-        $pengisian_selanjutnya = Pengisian::where('user_id','=','1')->where('status','=','0')->first();
-        
-        (!$pengisian_selanjutnya) ? redirect()->route('pengisian_selanjutnya', ['pengisian_id' => $pengisian_selanjutnya->id]) :  redirect()->route('pengisian');
-
         $user = \Auth::user();
-        $pengisians = Pengisian::where('user_id','=','1')->get();
+
+        $pengisian_selanjutnya = Pengisian::where('user_id','=',$user->id)->where('status','=','0')->first();
+        $pengisians = Pengisian::where('user_id','=',$user->id)->get();
         return view('pengisian',[
             'user' => $user,
             'pengisians' => $pengisians,
+            'pengisian_selanjutnya' => $pengisian_selanjutnya,
         ]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -48,7 +37,7 @@ class PengisianController extends Controller
         //
         $pengisian = Pengisian::find($request->segment(2));
         $pengisian->fill([
-            'q1' => $request->q1,
+            'q1' => 5,
             'q2' => $request->q2,
             'q3' => $request->q3,
             'q4' => $request->q4,
@@ -61,55 +50,20 @@ class PengisianController extends Controller
             'status' => 1,
         ]);
         $pengisian->save();
-        //return $pengisian;
         
-
-        $pengisian_selanjutnya = Pengisian::where('user_id','=','1')->where('status','=','0')->first();
-        return ($pengisian_selanjutnya) ? redirect()->route('pengisian_selanjutnya', ['pengisian_id' => $pengisian_selanjutnya->id]) :  redirect()->route('pengisian');
+        return $this->check();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Matakuliah  $matakuliah
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Matakuliah $matakuliah)
-    {
-        //
+    public function check(){
+
+        $user = \Auth::user();
+
+        $pengisian_selanjutnya = Pengisian::where('user_id','=',$user->id)->where('status','=','0')->first();
+        
+        if ($pengisian_selanjutnya)    
+            return redirect('pengisian/' . $pengisian_selanjutnya->id) ;
+        else
+            return redirect()->route('pengisian');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Matakuliah  $matakuliah
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Matakuliah $matakuliah)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Matakuliah  $matakuliah
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Matakuliah $matakuliah)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Matakuliah  $matakuliah
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Matakuliah $matakuliah)
-    {
-        //
-    }
 }

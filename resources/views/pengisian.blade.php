@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Pengisian Questioner : **</h1>
+    <h1>Pengisian : {{$pengisian_selanjutnya->matakuliah}}</h1>
     <hr>
     <div class="row">
         <div class="col-md-3">
@@ -16,12 +16,11 @@
               @if ($pengisian->status == '0')
                   <a href="{{URL::route('pengisian')}}/{{$pengisian->id}}" class="btn btn-success btn-block">{{$pengisian->matakuliah}}</a>
               @endif
-
           @endforeach
         </div>
 
         <div class="col-md-9">
-          @if (Request::segment(2))
+          @if ($pengisian_selanjutnya)
             @include('sub.pertanyaanQuestioner')
           @else
             <br>

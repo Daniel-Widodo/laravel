@@ -9,8 +9,8 @@ use App\User;
 class MahasiswaSeedController extends Controller
 {
 
-    public function seedMahasiswa(){
-        $path = 'resources\csv\mahasiswa.csv';
+    public function seed(){
+        $path = 'resources\csv\mahasiswa_data_seed.csv';
 
         $data = Excel::load($path)->get();
 
@@ -18,17 +18,16 @@ class MahasiswaSeedController extends Controller
             foreach ($data as $key => $value){
                 
                 $user = User::create([
-                    'name' => $value->nama,
+                    'id' => $value->rec,
+                    'name' => $value->name,
                     'email' => $value->email,
                     'nim' => $value->nim,
                     'tl' => $value->tl,
                 ]);
             }
-
- 
         }
 
-        return $user;
+        return 'Seeding Berhasil!';
         
     }
 

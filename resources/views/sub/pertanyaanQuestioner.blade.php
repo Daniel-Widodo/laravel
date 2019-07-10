@@ -1,6 +1,4 @@
-<h3>Questioner</h3> (1 Sangat tidak setuju - 2 Tidak Setuju - 3 Cukup Setuju - 4 Setuju - 5 Sangat setuju)
-
-<form action="/pengisian/{{Request::segment(2)}}" method="POST" name="form_questioner">
+<form action="/pengisian/{{$pengisian_selanjutnya->id}}" method="POST" name="form_questioner">
   @method('PUT')
   @csrf
 
@@ -136,3 +134,5 @@
       </tbody>
     </table>
   </form>
+  <p align="center">(1 Sangat tidak setuju - 2 Tidak Setuju - 3 Cukup Setuju - 4 Setuju - 5 Sangat setuju)</p>
+

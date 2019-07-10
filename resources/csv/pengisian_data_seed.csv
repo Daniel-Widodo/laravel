@@ -1,0 +1,439 @@
+rec,jurusan,matakuliah_id,matakuliah,nim,nama,user_id
+1,3,FC1764,Trend & Fashion Forecast,15043079009,Silvira Refri,6
+2,3,FC1761,DKF 4 - Adibusana/Future Fashion,15043079017,Aprilia Hapsari,13
+3,3,FC1762,Pola Busana 3,15043079017,Aprilia Hapsari,13
+4,3,PL1764,Fashion Entrepreneur,15043079017,Aprilia Hapsari,13
+5,1,DI1761,Desain Interior 4,16043079001,Patricia Christina,23
+6,1,DI1762,Produk Interior 3,16043079001,Patricia Christina,23
+7,1,DI1763,Komunikasi Desain Interior 4,16043079001,Patricia Christina,23
+8,1,DI1765,Manajemen Desain,16043079001,Patricia Christina,23
+9,1,PL1765,Gubahan Ruang Interior,16043079001,Patricia Christina,23
+10,2,DKV1761,DKV4 - Social Campaign,16043079002,Septianus Cahyadi,24
+11,2,DKV1762,Grafis Sekuensial,16043079002,Septianus Cahyadi,24
+12,2,DKV1763,Infografis,16043079002,Septianus Cahyadi,24
+13,2,DKV1764,Audio Visual,16043079002,Septianus Cahyadi,24
+14,2,PL1763,Visual Interface Desain,16043079002,Septianus Cahyadi,24
+15,3,FC1761,DKF 4 - Adibusana/Future Fashion,16043079004,Debora Alkadrina Avia Rahanra,26
+16,3,FC1762,Pola Busana 3,16043079004,Debora Alkadrina Avia Rahanra,26
+17,3,FC1763,Visual Merchandising Fashion,16043079004,Debora Alkadrina Avia Rahanra,26
+18,3,FC1764,Trend & Fashion Forecast,16043079004,Debora Alkadrina Avia Rahanra,26
+19,3,FC1765,Fashion Styling & Photography,16043079004,Debora Alkadrina Avia Rahanra,26
+20,3,PL1764,Fashion Entrepreneur,16043079004,Debora Alkadrina Avia Rahanra,26
+21,2,DKV1761,DKV4 - Social Campaign,16043079006,Remmy Adrianly Setiawan,27
+22,2,DKV1762,Grafis Sekuensial,16043079006,Remmy Adrianly Setiawan,27
+23,2,DKV1763,Infografis,16043079006,Remmy Adrianly Setiawan,27
+24,2,DKV1764,Audio Visual,16043079006,Remmy Adrianly Setiawan,27
+25,2,PL1763,Visual Interface Desain,16043079006,Remmy Adrianly Setiawan,27
+26,5,KU1741,Studi Budaya Indonesia 2,16043079006,Remmy Adrianly Setiawan,27
+27,2,DKV1761,DKV4 - Social Campaign,16043079007,Albertus Magnus Aryatama N.,28
+28,2,DKV1762,Grafis Sekuensial,16043079007,Albertus Magnus Aryatama N.,28
+29,2,DKV1763,Infografis,16043079007,Albertus Magnus Aryatama N.,28
+30,2,DKV1764,Audio Visual,16043079007,Albertus Magnus Aryatama N.,28
+31,2,PL1763,Visual Interface Desain,16043079007,Albertus Magnus Aryatama N.,28
+32,3,FC1761,DKF 4 - Adibusana/Future Fashion,16043079010,Asqiah Rizki Faddilah,29
+33,3,FC1762,Pola Busana 3,16043079010,Asqiah Rizki Faddilah,29
+34,3,FC1763,Visual Merchandising Fashion,16043079010,Asqiah Rizki Faddilah,29
+35,3,FC1764,Trend & Fashion Forecast,16043079010,Asqiah Rizki Faddilah,29
+36,3,FC1765,Fashion Styling & Photography,16043079010,Asqiah Rizki Faddilah,29
+37,3,PL1764,Fashion Entrepreneur,16043079010,Asqiah Rizki Faddilah,29
+38,5,KU1741,Studi Budaya Indonesia 2,16043079011,Galih Widhana,30
+39,1,DI1741,Desain Interior 2,16043079014,Yonas Fransico Sardeaz,32
+40,1,DI1743,Komunikasi Desain Interior 2,16043079014,Yonas Fransico Sardeaz,32
+41,1,DI1744,Ergonomi 2,16043079014,Yonas Fransico Sardeaz,32
+42,1,DI1745,Sustainable Desain,16043079014,Yonas Fransico Sardeaz,32
+43,1,DI1746,Utilitas Interior,16043079014,Yonas Fransico Sardeaz,32
+44,1,DI1765,Manajemen Desain,16043079014,Yonas Fransico Sardeaz,32
+45,5,KU1741,Studi Budaya Indonesia 2,16043079014,Yonas Fransico Sardeaz,32
+46,3,FC1761,DKF 4 - Adibusana/Future Fashion,16043079016,Arzonna Nita Fattama,34
+47,3,FC1762,Pola Busana 3,16043079016,Arzonna Nita Fattama,34
+48,3,FC1763,Visual Merchandising Fashion,16043079016,Arzonna Nita Fattama,34
+49,3,FC1764,Trend & Fashion Forecast,16043079016,Arzonna Nita Fattama,34
+50,3,FC1765,Fashion Styling & Photography,16043079016,Arzonna Nita Fattama,34
+51,3,PL1764,Fashion Entrepreneur,16043079016,Arzonna Nita Fattama,34
+52,4,TPB1724,Komputer Dasar Kelas A ,16043079019,Rizqi Maulana,35
+53,4,KU1722,Pendidikan Kewarganegaraan,16043079019,Rizqi Maulana,35
+54,1,DI1742,Produk Interior 1,16043079019,Rizqi Maulana,35
+55,1,DI1743,Komunikasi Desain Interior 2,16043079019,Rizqi Maulana,35
+56,1,DI1744,Ergonomi 2,16043079019,Rizqi Maulana,35
+57,1,DI1745,Sustainable Desain,16043079019,Rizqi Maulana,35
+58,1,DI1746,Utilitas Interior,16043079019,Rizqi Maulana,35
+59,5,KU1741,Studi Budaya Indonesia 2,16043079019,Rizqi Maulana,35
+60,2,DKV1761,DKV4 - Social Campaign,16043079020,Maria Seli Baptista,36
+61,2,DKV1762,Grafis Sekuensial,16043079020,Maria Seli Baptista,36
+62,2,DKV1763,Infografis,16043079020,Maria Seli Baptista,36
+63,2,DKV1764,Audio Visual,16043079020,Maria Seli Baptista,36
+64,2,PL1763,Visual Interface Desain,16043079020,Maria Seli Baptista,36
+65,3,FC1761,DKF 4 - Adibusana/Future Fashion,16043079022,Dewinta Sari Rahmaputri,37
+66,3,FC1762,Pola Busana 3,16043079022,Dewinta Sari Rahmaputri,37
+67,3,FC1763,Visual Merchandising Fashion,16043079022,Dewinta Sari Rahmaputri,37
+68,3,FC1764,Trend & Fashion Forecast,16043079022,Dewinta Sari Rahmaputri,37
+69,3,FC1765,Fashion Styling & Photography,16043079022,Dewinta Sari Rahmaputri,37
+70,3,PL1764,Fashion Entrepreneur,16043079022,Dewinta Sari Rahmaputri,37
+71,1,DI1761,Desain Interior 4,16043079024,Andini Meytasari,39
+72,1,DI1762,Produk Interior 3,16043079024,Andini Meytasari,39
+73,1,DI1763,Komunikasi Desain Interior 4,16043079024,Andini Meytasari,39
+74,1,PL1765,Gubahan Ruang Interior,16043079024,Andini Meytasari,39
+75,3,FC1761,DKF 4 - Adibusana/Future Fashion,16043079027,Cynthia Monica,40
+76,3,FC1762,Pola Busana 3,16043079027,Cynthia Monica,40
+77,3,FC1763,Visual Merchandising Fashion,16043079027,Cynthia Monica,40
+78,3,FC1764,Trend & Fashion Forecast,16043079027,Cynthia Monica,40
+79,3,FC1765,Fashion Styling & Photography,16043079027,Cynthia Monica,40
+80,3,PL1764,Fashion Entrepreneur,16043079027,Cynthia Monica,40
+81,3,FC1761,DKF 4 - Adibusana/Future Fashion,16043079029,Sitti Fadhila Azalia,41
+82,3,FC1762,Pola Busana 3,16043079029,Sitti Fadhila Azalia,41
+83,3,FC1763,Visual Merchandising Fashion,16043079029,Sitti Fadhila Azalia,41
+84,3,FC1764,Trend & Fashion Forecast,16043079029,Sitti Fadhila Azalia,41
+85,3,FC1765,Fashion Styling & Photography,16043079029,Sitti Fadhila Azalia,41
+86,3,PL1764,Fashion Entrepreneur,16043079029,Sitti Fadhila Azalia,41
+87,2,DKV1741,DKV2 - Identitas Visual,16043079105,Luvi Abdillah Yusuf,42
+88,2,DKV1742,Tinjauan & Sejarah DKV,16043079105,Luvi Abdillah Yusuf,42
+89,2,DKV1743,Tipografi Lanjut,16043079105,Luvi Abdillah Yusuf,42
+90,2,DKV1744,Ilustrasi Lanjut,16043079105,Luvi Abdillah Yusuf,42
+91,2,DKV1745,Komputer Grafis,16043079105,Luvi Abdillah Yusuf,42
+92,2,DKV1746,Proses Komunikasi,16043079105,Luvi Abdillah Yusuf,42
+93,5,KU1741,Studi Budaya Indonesia 2,16043079105,Luvi Abdillah Yusuf,42
+94,1,DI1761,Desain Interior 4,16043079113,Dirga Adhams Patulak,43
+95,1,DI1762,Produk Interior 3,16043079113,Dirga Adhams Patulak,43
+96,1,DI1763,Komunikasi Desain Interior 4,16043079113,Dirga Adhams Patulak,43
+97,1,DI1764,Tinjauan Desain Interior,16043079113,Dirga Adhams Patulak,43
+98,1,DI1765,Manajemen Desain,16043079113,Dirga Adhams Patulak,43
+99,1,PL1765,Gubahan Ruang Interior,16043079113,Dirga Adhams Patulak,43
+100,5,KU1741,Studi Budaya Indonesia 2,16043079113,Dirga Adhams Patulak,43
+101,2,DKV1761,DKV4 - Social Campaign,16043079118,Zyfra Hatikva Miracle,44
+102,2,DKV1762,Grafis Sekuensial,16043079118,Zyfra Hatikva Miracle,44
+103,2,DKV1763,Infografis,16043079118,Zyfra Hatikva Miracle,44
+104,2,DKV1764,Audio Visual,16043079118,Zyfra Hatikva Miracle,44
+105,2,PL1763,Visual Interface Desain,16043079118,Zyfra Hatikva Miracle,44
+106,3,FC1741,DKF2 - Basic Fashion(Local Wisdom),17043079002,Tina Setiyani Susanto,46
+107,3,FC1742,Pola Busana 1 ,17043079002,Tina Setiyani Susanto,46
+108,3,FC1743,Tinjauan Desain Fashion,17043079002,Tina Setiyani Susanto,46
+109,3,FC1744,Proses Komunikasi,17043079002,Tina Setiyani Susanto,46
+110,3,FC1745,Fashion Writing 2,17043079002,Tina Setiyani Susanto,46
+111,3,FC1746,Tinjauan Pakaian & Kain Tradisional,17043079002,Tina Setiyani Susanto,46
+112,3,FC1764,Trend & Fashion Forecast,17043079002,Tina Setiyani Susanto,46
+113,5,KU1741,Studi Budaya Indonesia 2,17043079002,Tina Setiyani Susanto,46
+114,2,DKV1741,DKV2 - Identitas Visual,17043079003,Christine Melina Situmorang,47
+115,2,DKV1742,Tinjauan & Sejarah DKV,17043079003,Christine Melina Situmorang,47
+116,2,DKV1743,Tipografi Lanjut,17043079003,Christine Melina Situmorang,47
+117,2,DKV1744,Ilustrasi Lanjut,17043079003,Christine Melina Situmorang,47
+118,2,DKV1745,Komputer Grafis,17043079003,Christine Melina Situmorang,47
+119,2,DKV1746,Proses Komunikasi,17043079003,Christine Melina Situmorang,47
+120,5,KU1741,Studi Budaya Indonesia 2,17043079003,Christine Melina Situmorang,47
+121,2,DKV1741,DKV2 - Identitas Visual,17043079004,Grace Oktaviani Liman,48
+122,2,DKV1742,Tinjauan & Sejarah DKV,17043079004,Grace Oktaviani Liman,48
+123,2,DKV1743,Tipografi Lanjut,17043079004,Grace Oktaviani Liman,48
+124,2,DKV1744,Ilustrasi Lanjut,17043079004,Grace Oktaviani Liman,48
+125,2,DKV1745,Komputer Grafis,17043079004,Grace Oktaviani Liman,48
+126,2,DKV1746,Proses Komunikasi,17043079004,Grace Oktaviani Liman,48
+127,5,KU1741,Studi Budaya Indonesia 2,17043079004,Grace Oktaviani Liman,48
+128,2,DKV1741,DKV2 - Identitas Visual,17043079005,Muhammad Fajar Maulid,49
+129,2,DKV1742,Tinjauan & Sejarah DKV,17043079005,Muhammad Fajar Maulid,49
+130,2,DKV1743,Tipografi Lanjut,17043079005,Muhammad Fajar Maulid,49
+131,2,DKV1744,Ilustrasi Lanjut,17043079005,Muhammad Fajar Maulid,49
+132,2,DKV1745,Komputer Grafis,17043079005,Muhammad Fajar Maulid,49
+133,2,DKV1746,Proses Komunikasi,17043079005,Muhammad Fajar Maulid,49
+134,5,KU1741,Studi Budaya Indonesia 2,17043079005,Muhammad Fajar Maulid,49
+135,2,DKV1741,DKV2 - Identitas Visual,17043079006,Farrel Gian Pradana Putra,50
+136,2,DKV1742,Tinjauan & Sejarah DKV,17043079006,Farrel Gian Pradana Putra,50
+137,2,DKV1743,Tipografi Lanjut,17043079006,Farrel Gian Pradana Putra,50
+138,2,DKV1744,Ilustrasi Lanjut,17043079006,Farrel Gian Pradana Putra,50
+139,2,DKV1745,Komputer Grafis,17043079006,Farrel Gian Pradana Putra,50
+140,2,DKV1746,Proses Komunikasi,17043079006,Farrel Gian Pradana Putra,50
+141,5,KU1741,Studi Budaya Indonesia 2,17043079006,Farrel Gian Pradana Putra,50
+142,3,FC1741,DKF2 - Basic Fashion(Local Wisdom),17043079007,Rani Krisdiana Dewi,51
+143,3,FC1742,Pola Busana 1 ,17043079007,Rani Krisdiana Dewi,51
+144,3,FC1743,Tinjauan Desain Fashion,17043079007,Rani Krisdiana Dewi,51
+145,3,FC1744,Proses Komunikasi,17043079007,Rani Krisdiana Dewi,51
+146,3,FC1745,Fashion Writing 2,17043079007,Rani Krisdiana Dewi,51
+147,3,FC1746,Tinjauan Pakaian & Kain Tradisional,17043079007,Rani Krisdiana Dewi,51
+148,5,KU1741,Studi Budaya Indonesia 2,17043079007,Rani Krisdiana Dewi,51
+149,1,DI1742,Produk Interior 1,17043079009,Gracia Teza Kinanthi,53
+150,1,DI1744,Ergonomi 2,17043079009,Gracia Teza Kinanthi,53
+151,1,DI1745,Sustainable Desain,17043079009,Gracia Teza Kinanthi,53
+152,1,DI1746,Utilitas Interior,17043079009,Gracia Teza Kinanthi,53
+153,5,KU1741,Studi Budaya Indonesia 2,17043079009,Gracia Teza Kinanthi,53
+154,2,DKV1741,DKV2 - Identitas Visual,17043079010,Tirtha Sudrajat Sahat Maukar,54
+155,2,DKV1742,Tinjauan & Sejarah DKV,17043079010,Tirtha Sudrajat Sahat Maukar,54
+156,2,DKV1743,Tipografi Lanjut,17043079010,Tirtha Sudrajat Sahat Maukar,54
+157,2,DKV1744,Ilustrasi Lanjut,17043079010,Tirtha Sudrajat Sahat Maukar,54
+158,2,DKV1745,Komputer Grafis,17043079010,Tirtha Sudrajat Sahat Maukar,54
+159,2,DKV1746,Proses Komunikasi,17043079010,Tirtha Sudrajat Sahat Maukar,54
+160,5,KU1741,Studi Budaya Indonesia 2,17043079010,Tirtha Sudrajat Sahat Maukar,54
+161,4,KU1722,Pendidikan Kewarganegaraan,17043079011,Nafiatul Rifdah,55
+162,3,FC1741,DKF2 - Basic Fashion(Local Wisdom),17043079011,Nafiatul Rifdah,55
+163,3,FC1742,Pola Busana 1 ,17043079011,Nafiatul Rifdah,55
+164,3,FC1743,Tinjauan Desain Fashion,17043079011,Nafiatul Rifdah,55
+165,3,FC1744,Proses Komunikasi,17043079011,Nafiatul Rifdah,55
+166,3,FC1745,Fashion Writing 2,17043079011,Nafiatul Rifdah,55
+167,3,FC1746,Tinjauan Pakaian & Kain Tradisional,17043079011,Nafiatul Rifdah,55
+168,5,KU1741,Studi Budaya Indonesia 2,17043079011,Nafiatul Rifdah,55
+169,2,DKV1741,DKV2 - Identitas Visual,17043079012,Eki Amir Nur Hamzah,56
+170,2,DKV1742,Tinjauan & Sejarah DKV,17043079012,Eki Amir Nur Hamzah,56
+171,2,DKV1743,Tipografi Lanjut,17043079012,Eki Amir Nur Hamzah,56
+172,2,DKV1744,Ilustrasi Lanjut,17043079012,Eki Amir Nur Hamzah,56
+173,2,DKV1745,Komputer Grafis,17043079012,Eki Amir Nur Hamzah,56
+174,2,DKV1746,Proses Komunikasi,17043079012,Eki Amir Nur Hamzah,56
+175,5,KU1741,Studi Budaya Indonesia 2,17043079012,Eki Amir Nur Hamzah,56
+176,3,FC1741,DKF2 - Basic Fashion(Local Wisdom),17043079013,Amethysari Mujaabah,57
+177,3,FC1742,Pola Busana 1 ,17043079013,Amethysari Mujaabah,57
+178,3,FC1743,Tinjauan Desain Fashion,17043079013,Amethysari Mujaabah,57
+179,3,FC1744,Proses Komunikasi,17043079013,Amethysari Mujaabah,57
+180,3,FC1745,Fashion Writing 2,17043079013,Amethysari Mujaabah,57
+181,3,FC1746,Tinjauan Pakaian & Kain Tradisional,17043079013,Amethysari Mujaabah,57
+182,3,FC1764,Trend & Fashion Forecast,17043079013,Amethysari Mujaabah,57
+183,5,KU1741,Studi Budaya Indonesia 2,17043079013,Amethysari Mujaabah,57
+184,4,KU1721,Bahasa Inggris,17043079014,Romita Diara Sari,58
+185,3,FC1741,DKF2 - Basic Fashion(Local Wisdom),17043079014,Romita Diara Sari,58
+186,3,FC1742,Pola Busana 1 ,17043079014,Romita Diara Sari,58
+187,3,FC1743,Tinjauan Desain Fashion,17043079014,Romita Diara Sari,58
+188,3,FC1744,Proses Komunikasi,17043079014,Romita Diara Sari,58
+189,3,FC1745,Fashion Writing 2,17043079014,Romita Diara Sari,58
+190,3,FC1746,Tinjauan Pakaian & Kain Tradisional,17043079014,Romita Diara Sari,58
+191,5,KU1741,Studi Budaya Indonesia 2,17043079014,Romita Diara Sari,58
+192,3,FC1741,DKF2 - Basic Fashion(Local Wisdom),17043079016,Shella Alisa,60
+193,3,FC1742,Pola Busana 1 ,17043079016,Shella Alisa,60
+194,3,FC1743,Tinjauan Desain Fashion,17043079016,Shella Alisa,60
+195,3,FC1744,Proses Komunikasi,17043079016,Shella Alisa,60
+196,3,FC1745,Fashion Writing 2,17043079016,Shella Alisa,60
+197,3,FC1746,Tinjauan Pakaian & Kain Tradisional,17043079016,Shella Alisa,60
+198,3,FC1764,Trend & Fashion Forecast,17043079016,Shella Alisa,60
+199,5,KU1741,Studi Budaya Indonesia 2,17043079016,Shella Alisa,60
+200,2,DKV1741,DKV2 - Identitas Visual,17043079020,Yosua Agustian,61
+201,2,DKV1743,Tipografi Lanjut,17043079020,Yosua Agustian,61
+202,2,DKV1745,Komputer Grafis,17043079021,Marsha Natama Pasaribu,62
+203,5,KU1741,Studi Budaya Indonesia 2,17043079021,Marsha Natama Pasaribu,62
+204,1,DI1742,Produk Interior 1,17043079117,Nuzulul Salma Dwi Intan Syafiera,63
+205,1,DI1743,Komunikasi Desain Interior 2,17043079117,Nuzulul Salma Dwi Intan Syafiera,63
+206,1,DI1744,Ergonomi 2,17043079117,Nuzulul Salma Dwi Intan Syafiera,63
+207,1,DI1745,Sustainable Desain,17043079117,Nuzulul Salma Dwi Intan Syafiera,63
+208,1,DI1746,Utilitas Interior,17043079117,Nuzulul Salma Dwi Intan Syafiera,63
+209,5,KU1741,Studi Budaya Indonesia 2,17043079117,Nuzulul Salma Dwi Intan Syafiera,63
+210,4,TPB1721,Gambar Bentuk,18043079001,Ishak Fransisco Amtiran,64
+211,4,TPB1722,Nirmana Dwimatra 2,18043079001,Ishak Fransisco Amtiran,64
+212,4,TPB1723,Nirmana Trimatra 2,18043079001,Ishak Fransisco Amtiran,64
+213,4,TPB1724,Komputer Dasar Kelas A ,18043079001,Ishak Fransisco Amtiran,64
+214,4,TPB1725,Fotografi Dasar - Kelas A,18043079001,Ishak Fransisco Amtiran,64
+215,4,KU1721,Bahasa Inggris,18043079001,Ishak Fransisco Amtiran,64
+216,4,KU1722,Pendidikan Kewarganegaraan,18043079001,Ishak Fransisco Amtiran,64
+217,4,TPB1721,Gambar Bentuk,18043079002,Firli Inzzani Putri,65
+218,4,TPB1722,Nirmana Dwimatra 2,18043079002,Firli Inzzani Putri,65
+219,4,TPB1723,Nirmana Trimatra 2,18043079002,Firli Inzzani Putri,65
+220,4,TPB1724,Komputer Dasar Kelas A ,18043079002,Firli Inzzani Putri,65
+221,4,TPB1725,Fotografi Dasar - Kelas A,18043079002,Firli Inzzani Putri,65
+222,4,KU1721,Bahasa Inggris,18043079002,Firli Inzzani Putri,65
+223,4,KU1722,Pendidikan Kewarganegaraan,18043079002,Firli Inzzani Putri,65
+224,4,TPB1721,Gambar Bentuk,18043079003,Ravica Rahmatul Aulia,66
+225,4,TPB1722,Nirmana Dwimatra 2,18043079003,Ravica Rahmatul Aulia,66
+226,4,TPB1723,Nirmana Trimatra 2,18043079003,Ravica Rahmatul Aulia,66
+227,4,TPB1724,Komputer Dasar Kelas A ,18043079003,Ravica Rahmatul Aulia,66
+228,4,TPB1725,Fotografi Dasar - Kelas A,18043079003,Ravica Rahmatul Aulia,66
+229,4,KU1721,Bahasa Inggris,18043079003,Ravica Rahmatul Aulia,66
+230,4,KU1722,Pendidikan Kewarganegaraan,18043079003,Ravica Rahmatul Aulia,66
+231,4,TPB1721,Gambar Bentuk,18043079004,Vinessa Andari Baehaky,67
+232,4,TPB1722,Nirmana Dwimatra 2,18043079004,Vinessa Andari Baehaky,67
+233,4,TPB1723,Nirmana Trimatra 2,18043079004,Vinessa Andari Baehaky,67
+234,4,TPB1724,Komputer Dasar Kelas A ,18043079004,Vinessa Andari Baehaky,67
+235,4,TPB1725,Fotografi Dasar - Kelas A,18043079004,Vinessa Andari Baehaky,67
+236,4,KU1721,Bahasa Inggris,18043079004,Vinessa Andari Baehaky,67
+237,4,KU1722,Pendidikan Kewarganegaraan,18043079004,Vinessa Andari Baehaky,67
+238,4,TPB1721,Gambar Bentuk,18043079005,Garrick Gisala Kurnia,68
+239,4,TPB1722,Nirmana Dwimatra 2,18043079005,Garrick Gisala Kurnia,68
+240,4,TPB1723,Nirmana Trimatra 2,18043079005,Garrick Gisala Kurnia,68
+241,4,TPB1724,Komputer Dasar Kelas A ,18043079005,Garrick Gisala Kurnia,68
+242,4,TPB1725,Fotografi Dasar - Kelas A,18043079005,Garrick Gisala Kurnia,68
+243,4,KU1721,Bahasa Inggris,18043079005,Garrick Gisala Kurnia,68
+244,4,KU1722,Pendidikan Kewarganegaraan,18043079005,Garrick Gisala Kurnia,68
+245,4,TPB1721,Gambar Bentuk,18043079006,Jeihan Firas Fathira,69
+246,4,TPB1722,Nirmana Dwimatra 2,18043079006,Jeihan Firas Fathira,69
+247,4,TPB1723,Nirmana Trimatra 2,18043079006,Jeihan Firas Fathira,69
+248,4,TPB1724,Komputer Dasar Kelas A ,18043079006,Jeihan Firas Fathira,69
+249,4,TPB1725,Fotografi Dasar - Kelas A,18043079006,Jeihan Firas Fathira,69
+250,4,KU1721,Bahasa Inggris,18043079006,Jeihan Firas Fathira,69
+251,4,KU1722,Pendidikan Kewarganegaraan,18043079006,Jeihan Firas Fathira,69
+252,4,TPB1721,Gambar Bentuk,18043079007,Husnul Hotimah,70
+253,4,TPB1722,Nirmana Dwimatra 2,18043079007,Husnul Hotimah,70
+254,4,TPB1723,Nirmana Trimatra 2,18043079007,Husnul Hotimah,70
+255,4,TPB1724,Komputer Dasar Kelas A ,18043079007,Husnul Hotimah,70
+256,4,TPB1725,Fotografi Dasar - Kelas A,18043079007,Husnul Hotimah,70
+257,4,KU1721,Bahasa Inggris,18043079007,Husnul Hotimah,70
+258,4,KU1722,Pendidikan Kewarganegaraan,18043079007,Husnul Hotimah,70
+259,4,TPB1721,Gambar Bentuk,18043079009,Muhammad Andika Indrianto,72
+260,4,TPB1722,Nirmana Dwimatra 2,18043079009,Muhammad Andika Indrianto,72
+261,4,TPB1723,Nirmana Trimatra 2,18043079009,Muhammad Andika Indrianto,72
+262,4,TPB1724,Komputer Dasar Kelas A ,18043079009,Muhammad Andika Indrianto,72
+263,4,TPB1725,Fotografi Dasar - Kelas A,18043079009,Muhammad Andika Indrianto,72
+264,4,KU1721,Bahasa Inggris,18043079009,Muhammad Andika Indrianto,72
+265,4,KU1722,Pendidikan Kewarganegaraan,18043079009,Muhammad Andika Indrianto,72
+266,4,TPB1721,Gambar Bentuk,18043079010,Caesara Eligracea Hariyanto,73
+267,4,TPB1722,Nirmana Dwimatra 2,18043079010,Caesara Eligracea Hariyanto,73
+268,4,TPB1723,Nirmana Trimatra 2,18043079010,Caesara Eligracea Hariyanto,73
+269,4,TPB1724,Komputer Dasar Kelas A ,18043079010,Caesara Eligracea Hariyanto,73
+270,4,TPB1725,Fotografi Dasar - Kelas A,18043079010,Caesara Eligracea Hariyanto,73
+271,4,KU1721,Bahasa Inggris,18043079010,Caesara Eligracea Hariyanto,73
+272,4,KU1722,Pendidikan Kewarganegaraan,18043079010,Caesara Eligracea Hariyanto,73
+273,4,TPB1721,Gambar Bentuk,18043079011,Galuh Indri Prameswari,74
+274,4,TPB1722,Nirmana Dwimatra 2,18043079011,Galuh Indri Prameswari,74
+275,4,TPB1723,Nirmana Trimatra 2,18043079011,Galuh Indri Prameswari,74
+276,4,TPB1724,Komputer Dasar Kelas A ,18043079011,Galuh Indri Prameswari,74
+277,4,TPB1725,Fotografi Dasar - Kelas A,18043079011,Galuh Indri Prameswari,74
+278,4,KU1721,Bahasa Inggris,18043079011,Galuh Indri Prameswari,74
+279,4,KU1722,Pendidikan Kewarganegaraan,18043079011,Galuh Indri Prameswari,74
+280,4,TPB1721,Gambar Bentuk,18043079012,Yolanda kamila,75
+281,4,TPB1722,Nirmana Dwimatra 2,18043079012,Yolanda kamila,75
+282,4,TPB1723,Nirmana Trimatra 2,18043079012,Yolanda kamila,75
+283,4,TPB1724,Komputer Dasar Kelas A ,18043079012,Yolanda kamila,75
+284,4,TPB1725,Fotografi Dasar - Kelas A,18043079012,Yolanda kamila,75
+285,4,KU1721,Bahasa Inggris,18043079012,Yolanda kamila,75
+286,4,KU1722,Pendidikan Kewarganegaraan,18043079012,Yolanda kamila,75
+287,4,TPB1721,Gambar Bentuk,18043079015,Lifya Athifa Zahra,77
+288,4,TPB1722,Nirmana Dwimatra 2,18043079015,Lifya Athifa Zahra,77
+289,4,TPB1723,Nirmana Trimatra 2,18043079015,Lifya Athifa Zahra,77
+290,4,TPB1724,Komputer Dasar Kelas A ,18043079015,Lifya Athifa Zahra,77
+291,4,TPB1725,Fotografi Dasar - Kelas A,18043079015,Lifya Athifa Zahra,77
+292,4,KU1721,Bahasa Inggris,18043079015,Lifya Athifa Zahra,77
+293,4,KU1722,Pendidikan Kewarganegaraan,18043079015,Lifya Athifa Zahra,77
+294,4,TPB1721,Gambar Bentuk,18043079016,Andrea Antonia,78
+295,4,TPB1722,Nirmana Dwimatra 2,18043079016,Andrea Antonia,78
+296,4,TPB1723,Nirmana Trimatra 2,18043079016,Andrea Antonia,78
+297,4,TPB1724,Komputer Dasar Kelas A ,18043079016,Andrea Antonia,78
+298,4,TPB1725,Fotografi Dasar - Kelas A,18043079016,Andrea Antonia,78
+299,4,KU1721,Bahasa Inggris,18043079016,Andrea Antonia,78
+300,4,KU1722,Pendidikan Kewarganegaraan,18043079016,Andrea Antonia,78
+301,4,TPB1721,Gambar Bentuk,18043079017,Mey Shania Umbora,79
+302,4,TPB1722,Nirmana Dwimatra 2,18043079017,Mey Shania Umbora,79
+303,4,TPB1723,Nirmana Trimatra 2,18043079017,Mey Shania Umbora,79
+304,4,TPB1724,Komputer Dasar Kelas B,18043079017,Mey Shania Umbora,79
+305,4,TPB1725,Fotografi Dasar - Kelas A,18043079017,Mey Shania Umbora,79
+306,4,KU1721,Bahasa Inggris,18043079017,Mey Shania Umbora,79
+307,4,KU1722,Pendidikan Kewarganegaraan,18043079017,Mey Shania Umbora,79
+308,4,TPB1721,Gambar Bentuk,18043079018,Kukuh Timet Haryanto,80
+309,4,TPB1722,Nirmana Dwimatra 2,18043079018,Kukuh Timet Haryanto,80
+310,4,TPB1723,Nirmana Trimatra 2,18043079018,Kukuh Timet Haryanto,80
+311,4,TPB1724,Komputer Dasar Kelas B,18043079018,Kukuh Timet Haryanto,80
+312,4,TPB1725,Fotografi Dasar - Kelas B,18043079018,Kukuh Timet Haryanto,80
+313,4,KU1721,Bahasa Inggris,18043079018,Kukuh Timet Haryanto,80
+314,4,KU1722,Pendidikan Kewarganegaraan,18043079018,Kukuh Timet Haryanto,80
+315,4,TPB1721,Gambar Bentuk,18043079019,Siska Arum Pemunkir,81
+316,4,TPB1722,Nirmana Dwimatra 2,18043079019,Siska Arum Pemunkir,81
+317,4,TPB1723,Nirmana Trimatra 2,18043079019,Siska Arum Pemunkir,81
+318,4,TPB1724,Komputer Dasar Kelas B,18043079019,Siska Arum Pemunkir,81
+319,4,TPB1725,Fotografi Dasar - Kelas B,18043079019,Siska Arum Pemunkir,81
+320,4,KU1721,Bahasa Inggris,18043079019,Siska Arum Pemunkir,81
+321,4,KU1722,Pendidikan Kewarganegaraan,18043079019,Siska Arum Pemunkir,81
+322,4,TPB1721,Gambar Bentuk,18043079020,Selvi,82
+323,4,TPB1722,Nirmana Dwimatra 2,18043079020,Selvi,82
+324,4,TPB1723,Nirmana Trimatra 2,18043079020,Selvi,82
+325,4,TPB1724,Komputer Dasar Kelas B,18043079020,Selvi,82
+326,4,TPB1725,Fotografi Dasar - Kelas B,18043079020,Selvi,82
+327,4,KU1721,Bahasa Inggris,18043079020,Selvi,82
+328,4,KU1722,Pendidikan Kewarganegaraan,18043079020,Selvi,82
+329,4,TPB1721,Gambar Bentuk,18043079021,Indah Damaiyanti Panggabean,83
+330,4,TPB1722,Nirmana Dwimatra 2,18043079021,Indah Damaiyanti Panggabean,83
+331,4,TPB1723,Nirmana Trimatra 2,18043079021,Indah Damaiyanti Panggabean,83
+332,4,TPB1724,Komputer Dasar Kelas B,18043079021,Indah Damaiyanti Panggabean,83
+333,4,TPB1725,Fotografi Dasar - Kelas B,18043079021,Indah Damaiyanti Panggabean,83
+334,4,KU1721,Bahasa Inggris,18043079021,Indah Damaiyanti Panggabean,83
+335,4,KU1722,Pendidikan Kewarganegaraan,18043079021,Indah Damaiyanti Panggabean,83
+336,1,DI1746,Utilitas Interior,18043079022,Azani Zalika Putri,84
+337,1,DI1761,Desain Interior 4,18043079022,Azani Zalika Putri,84
+338,1,DI1762,Produk Interior 3,18043079022,Azani Zalika Putri,84
+339,5,KU1741,Studi Budaya Indonesia 2,18043079022,Azani Zalika Putri,84
+340,2,DKV1743,Tipografi Lanjut,18043079023,Aldo Pradistira Putra,85
+341,2,DKV1745,Komputer Grafis,18043079023,Aldo Pradistira Putra,85
+342,2,DKV1762,Grafis Sekuensial,18043079023,Aldo Pradistira Putra,85
+343,2,DKV1763,Infografis,18043079023,Aldo Pradistira Putra,85
+344,4,TPB1721,Gambar Bentuk,18043079024,Hesti Rindiyani,86
+345,4,TPB1722,Nirmana Dwimatra 2,18043079024,Hesti Rindiyani,86
+346,4,TPB1723,Nirmana Trimatra 2,18043079024,Hesti Rindiyani,86
+347,4,TPB1724,Komputer Dasar Kelas B,18043079024,Hesti Rindiyani,86
+348,4,TPB1725,Fotografi Dasar - Kelas B,18043079024,Hesti Rindiyani,86
+349,4,KU1721,Bahasa Inggris,18043079024,Hesti Rindiyani,86
+350,4,KU1722,Pendidikan Kewarganegaraan,18043079024,Hesti Rindiyani,86
+351,4,TPB1721,Gambar Bentuk,18043079025,Mohammad Ansyori Muhyidin,87
+352,4,TPB1722,Nirmana Dwimatra 2,18043079025,Mohammad Ansyori Muhyidin,87
+353,4,TPB1723,Nirmana Trimatra 2,18043079025,Mohammad Ansyori Muhyidin,87
+354,4,TPB1724,Komputer Dasar Kelas B,18043079025,Mohammad Ansyori Muhyidin,87
+355,4,TPB1725,Fotografi Dasar - Kelas B,18043079025,Mohammad Ansyori Muhyidin,87
+356,4,KU1721,Bahasa Inggris,18043079025,Mohammad Ansyori Muhyidin,87
+357,4,KU1722,Pendidikan Kewarganegaraan,18043079025,Mohammad Ansyori Muhyidin,87
+358,4,TPB1725,Fotografi Dasar - Kelas A,18043079026,Marcella Gordon,88
+359,3,FC1744,Proses Komunikasi,18043079026,Marcella Gordon,88
+360,3,FC1745,Fashion Writing 2,18043079026,Marcella Gordon,88
+361,3,FC1763,Visual Merchandising Fashion,18043079026,Marcella Gordon,88
+362,4,TPB1721,Gambar Bentuk,18043079027,Lady's Amelia Sitanggang,89
+363,4,TPB1722,Nirmana Dwimatra 2,18043079027,Lady's Amelia Sitanggang,89
+364,4,TPB1723,Nirmana Trimatra 2,18043079027,Lady's Amelia Sitanggang,89
+365,4,TPB1724,Komputer Dasar Kelas B,18043079027,Lady's Amelia Sitanggang,89
+366,4,TPB1725,Fotografi Dasar - Kelas B,18043079027,Lady's Amelia Sitanggang,89
+367,4,KU1721,Bahasa Inggris,18043079027,Lady's Amelia Sitanggang,89
+368,4,KU1722,Pendidikan Kewarganegaraan,18043079027,Lady's Amelia Sitanggang,89
+369,4,TPB1721,Gambar Bentuk,18043079028,Raudhatul Husni,90
+370,4,TPB1722,Nirmana Dwimatra 2,18043079028,Raudhatul Husni,90
+371,4,TPB1723,Nirmana Trimatra 2,18043079028,Raudhatul Husni,90
+372,4,TPB1724,Komputer Dasar Kelas B,18043079028,Raudhatul Husni,90
+373,4,TPB1725,Fotografi Dasar - Kelas B,18043079028,Raudhatul Husni,90
+374,4,KU1721,Bahasa Inggris,18043079028,Raudhatul Husni,90
+375,4,KU1722,Pendidikan Kewarganegaraan,18043079028,Raudhatul Husni,90
+376,4,TPB1721,Gambar Bentuk,18043079029,Jely Elfrida Sitopu,91
+377,4,TPB1722,Nirmana Dwimatra 2,18043079029,Jely Elfrida Sitopu,91
+378,4,TPB1723,Nirmana Trimatra 2,18043079029,Jely Elfrida Sitopu,91
+379,4,TPB1724,Komputer Dasar Kelas B,18043079029,Jely Elfrida Sitopu,91
+380,4,TPB1725,Fotografi Dasar - Kelas B,18043079029,Jely Elfrida Sitopu,91
+381,4,KU1721,Bahasa Inggris,18043079029,Jely Elfrida Sitopu,91
+382,4,KU1722,Pendidikan Kewarganegaraan,18043079029,Jely Elfrida Sitopu,91
+383,4,TPB1721,Gambar Bentuk,18043079030,Carmeylita Revi Nafadia,92
+384,4,TPB1722,Nirmana Dwimatra 2,18043079030,Carmeylita Revi Nafadia,92
+385,4,TPB1723,Nirmana Trimatra 2,18043079030,Carmeylita Revi Nafadia,92
+386,4,TPB1724,Komputer Dasar Kelas B,18043079030,Carmeylita Revi Nafadia,92
+387,4,TPB1725,Fotografi Dasar - Kelas B,18043079030,Carmeylita Revi Nafadia,92
+388,4,KU1721,Bahasa Inggris,18043079030,Carmeylita Revi Nafadia,92
+389,4,KU1722,Pendidikan Kewarganegaraan,18043079030,Carmeylita Revi Nafadia,92
+390,4,TPB1721,Gambar Bentuk,18043079031,Emmy Elyza Putriyana,93
+391,4,TPB1722,Nirmana Dwimatra 2,18043079031,Emmy Elyza Putriyana,93
+392,4,TPB1723,Nirmana Trimatra 2,18043079031,Emmy Elyza Putriyana,93
+393,4,TPB1724,Komputer Dasar Kelas B,18043079031,Emmy Elyza Putriyana,93
+394,4,TPB1725,Fotografi Dasar - Kelas B,18043079031,Emmy Elyza Putriyana,93
+395,4,KU1721,Bahasa Inggris,18043079031,Emmy Elyza Putriyana,93
+396,4,KU1722,Pendidikan Kewarganegaraan,18043079031,Emmy Elyza Putriyana,93
+397,4,TPB1721,Gambar Bentuk,18043079033,Aden Budi Prabowo,95
+398,4,TPB1722,Nirmana Dwimatra 2,18043079033,Aden Budi Prabowo,95
+399,4,TPB1723,Nirmana Trimatra 2,18043079033,Aden Budi Prabowo,95
+400,4,TPB1724,Komputer Dasar Kelas B,18043079033,Aden Budi Prabowo,95
+401,4,TPB1725,Fotografi Dasar - Kelas B,18043079033,Aden Budi Prabowo,95
+402,4,KU1721,Bahasa Inggris,18043079033,Aden Budi Prabowo,95
+403,4,KU1722,Pendidikan Kewarganegaraan,18043079033,Aden Budi Prabowo,95
+404,4,TPB1721,Gambar Bentuk,18043079035,Benedictus Praseptiangga Poncoliano Wijaya,97
+405,4,TPB1722,Nirmana Dwimatra 2,18043079035,Benedictus Praseptiangga Poncoliano Wijaya,97
+406,4,TPB1723,Nirmana Trimatra 2,18043079035,Benedictus Praseptiangga Poncoliano Wijaya,97
+407,4,TPB1724,Komputer Dasar Kelas A ,18043079035,Benedictus Praseptiangga Poncoliano Wijaya,97
+408,4,TPB1725,Fotografi Dasar - Kelas B,18043079035,Benedictus Praseptiangga Poncoliano Wijaya,97
+409,4,KU1722,Pendidikan Kewarganegaraan,18043079035,Benedictus Praseptiangga Poncoliano Wijaya,97
+410,4,TPB1721,Gambar Bentuk,18043079036,Thiflan Dafi Fadhilah,98
+411,4,TPB1722,Nirmana Dwimatra 2,18043079036,Thiflan Dafi Fadhilah,98
+412,4,TPB1723,Nirmana Trimatra 2,18043079036,Thiflan Dafi Fadhilah,98
+413,4,TPB1724,Komputer Dasar Kelas B,18043079036,Thiflan Dafi Fadhilah,98
+414,4,TPB1725,Fotografi Dasar - Kelas B,18043079036,Thiflan Dafi Fadhilah,98
+415,4,KU1721,Bahasa Inggris,18043079036,Thiflan Dafi Fadhilah,98
+416,4,KU1722,Pendidikan Kewarganegaraan,18043079036,Thiflan Dafi Fadhilah,98
+417,1,DI1761,Desain Interior 4,18043079037,Helio Fernandes De Lima,99
+418,1,DI1764,Tinjauan Desain Interior,18043079037,Helio Fernandes De Lima,99
+419,1,PL1765,Gubahan Ruang Interior,18043079037,Helio Fernandes De Lima,99
+420,4,TPB1725,Fotografi Dasar - Kelas A,18043079040,Nyi Rizka Dwiputri Harisbaya Nataadiningrat,101
+421,4,KU1721,Bahasa Inggris,18043079040,Nyi Rizka Dwiputri Harisbaya Nataadiningrat,101
+422,3,FC1743,Tinjauan Desain Fashion,18043079040,Nyi Rizka Dwiputri Harisbaya Nataadiningrat,101
+423,3,FC1744,Proses Komunikasi,18043079040,Nyi Rizka Dwiputri Harisbaya Nataadiningrat,101
+424,3,FC1745,Fashion Writing 2,18043079040,Nyi Rizka Dwiputri Harisbaya Nataadiningrat,101
+425,3,FC1746,Tinjauan Pakaian & Kain Tradisional,18043079040,Nyi Rizka Dwiputri Harisbaya Nataadiningrat,101
+426,4,TPB1724,Komputer Dasar Kelas B,18043079041,Klarissa Thiodorin,102
+427,4,TPB1725,Fotografi Dasar - Kelas A,18043079041,Klarissa Thiodorin,102
+428,1,DI1741,Desain Interior 2,18043079041,Klarissa Thiodorin,102
+429,1,DI1743,Komunikasi Desain Interior 2,18043079041,Klarissa Thiodorin,102
+430,1,DI1744,Ergonomi 2,18043079041,Klarissa Thiodorin,102
+431,1,DI1764,Tinjauan Desain Interior,18043079041,Klarissa Thiodorin,102
+432,1,PL1765,Gubahan Ruang Interior,18043079041,Klarissa Thiodorin,102
+433,2,DKV1742,Tinjauan & Sejarah DKV,A1B213003,El Amico Agi Questo,104
+434,2,DKV1743,Tipografi Lanjut,A1B213003,El Amico Agi Questo,104
+435,2,DKV1744,Ilustrasi Lanjut,A1B213003,El Amico Agi Questo,104
+436,2,DKV1763,Infografis,A1B213003,El Amico Agi Questo,104
+437,2,PL1763,Visual Interface Desain,A1B213003,El Amico Agi Questo,104
+438,2,PL1763,Visual Interface Desain,A1B214002,Chandra Puspitasari,107
