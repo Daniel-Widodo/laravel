@@ -19,10 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/pengisian', 'PengisianController@index')->name('pengisian')->middleware('auth');
-Route::get('/pengisian/check', 'PengisianController@check')->name('pengisian_check')->middleware('auth');
-Route::get('/pengisian/{pengisian_id}', 'PengisianController@index')->name('pengisian_selanjutnya')->middleware('auth');
-Route::put('/pengisian/{pengisian_id}', 'PengisianController@store')->name('input_pengisian');
+Route::get('/pengisian', 'PengisianController@next')->name('pengisian');
+Route::get('/pengisian/next', 'PengisianController@next')->name('pengisian_next');
+
+Route::get('/pengisian/not_active', 'PengisianController@not_active')->name('not_active');
+Route::get('/pengisian/answered_all', 'PengisianController@answered_all')->name('answered_all');
+Route::get('/pengisian/{id}', 'PengisianController@show');
+Route::put('/pengisian/{id}', 'PengisianController@store');
+
 
 Route::get('/hasil', 'HasilController@index')->name('hasil');
 Route::get('/mahasiswa', 'MahasiswaController@index')->name('mahasiswa');
