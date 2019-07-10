@@ -13,7 +13,7 @@ class PengisianController extends Controller
         $this->middleware('auth');
         $this->middleware('check_active')->except('not_active');
         $this->middleware('owened_by',['only' => ['show', 'store', 'edit', 'delete']]);
-        $this->middleware('answered_all',['except' => ['not_active', 'not_active']]);
+        $this->middleware('answered_all',['except' => ['answered_all', 'not_active']]);
     }
 
 
