@@ -57,7 +57,8 @@
 
                     </div>
                     <div class="col-md-3" align="right">
-                      <h1 class="display-3">{{$count/$user_count*100}}%</h1>
+                      <h1 class="display-3">{{number_format($count/$user_count*100, 2, '.', ',')}}%</h1>
+                      
                     </div>
                     <div class="col-md-2"><br>
                       Responden : {{$count}}<br>

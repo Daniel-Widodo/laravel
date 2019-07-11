@@ -16,11 +16,11 @@ class HasilController extends Controller
     {
         
 
-        $di = Hasil::where('jurusan','=','1')->take(3)->get();
-        $dkv = Hasil::where('jurusan','=','2')->take(3)->get();
-        $dkf = Hasil::where('jurusan','=','3')->take(3)->get();
-        $tpb = Hasil::where('jurusan','=','4')->take(3)->get();
-        $umum = Hasil::where('jurusan','=','5')->take(3)->get();
+        $di = Hasil::where('jurusan','=','1')->orderBy('qavg', 'desc')->take(3)->get();
+        $dkv = Hasil::where('jurusan','=','2')->orderBy('qavg', 'desc')->take(3)->get();
+        $dkf = Hasil::where('jurusan','=','3')->orderBy('qavg', 'desc')->take(3)->get();
+        $tpb = Hasil::where('jurusan','=','4')->orderBy('qavg', 'desc')->take(3)->get();
+        $umum = Hasil::where('jurusan','=','5')->orderBy('qavg', 'desc')->take(3)->get();
 
         //return $di;
         return view('hasil',[
