@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
+use Maatwebsite\Excel\Facades\Excel;
+use App\Hasil;
+
 class HasilsTableSeeder extends Seeder
 {
     /**
@@ -11,11 +14,19 @@ class HasilsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        $hasil = factory(App\Hasil::class)->make();
+        $path = 'resources\csv\hasil_data_seed.csv';
 
-        factory(App\Hasil::class, 10)->create()->each(function ($hasil) {
-            
-        });
+        $data = Excel::load($path)->get();
+
+        if($data->count()){
+            foreach ($data as $key => $value){
+                
+                $user = Hasil::create([
+                    'jurusan' => $value->jurusan,
+                    'matakuliah_id' => $value->matakuliah_id,
+                    'matakuliah' => $value->matakuliah,
+                ]);
+            }
+        }
     }
 }

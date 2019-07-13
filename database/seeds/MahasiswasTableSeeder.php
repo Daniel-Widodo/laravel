@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Generator as Faker;
+
+use Maatwebsite\Excel\Facades\Excel;
+use App\User;
 
 class MahasiswasTableSeeder extends Seeder
 {
@@ -13,10 +15,21 @@ class MahasiswasTableSeeder extends Seeder
     public function run()
     {
         //
-        $user = factory(App\User::class)->make();
+        $path = 'resources\csv\mahasiswa_data_seed.csv';
 
-        factory(App\User::class, 10)->create()->each(function ($user) {
-            
-        });
+        $data = Excel::load($path)->get();
+
+        if($data->count()){
+            foreach ($data as $key => $value){
+                
+                $user = User::create([
+                    'id' => $value->rec,
+                    'name' => $value->name,
+                    'email' => $value->email,
+                    'nim' => $value->nim,
+                    'tl' => $value->tl,
+                ]);
+            }
+        }
     }
 }

@@ -30,7 +30,3 @@ Route::put('/pengisian/{id}', 'PengisianController@store');
 
 Route::get('/hasil', 'HasilController@index')->name('hasil');
 Route::get('/mahasiswa', 'MahasiswaController@index')->name('mahasiswa');
-
-Route::get('/mahasiswa_seed', 'MahasiswaSeedController@seed')->name('mahasiswa_seed');
-Route::get('/pengisian_seed', 'PengisianSeedController@seed')->name('pengisian_seed');
-Route::get('/hasil_seed', 'HasilSeedController@seed')->name('hasil_seed');

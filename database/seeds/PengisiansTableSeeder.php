@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
+use Maatwebsite\Excel\Facades\Excel;
+use App\Pengisian;
+
 class PengisiansTableSeeder extends Seeder
 {
     /**
@@ -12,10 +15,19 @@ class PengisiansTableSeeder extends Seeder
     public function run()
     {
         //
-        $pengisian = factory(App\Pengisian::class)->make();
+        $path = 'resources\csv\pengisian_data_seed.csv';
 
-        factory(App\Pengisian::class, 7)->create()->each(function ($pengisian) {
-            
-        });
+        $data = Excel::load($path)->get();
+
+        if($data->count()){
+            foreach ($data as $key => $value){
+                
+                $user = Pengisian::create([
+                    'user_id' => $value->user_id,
+                    'matakuliah_id' => $value->matakuliah_id,
+                    'matakuliah' => $value->matakuliah,
+                ]);
+            }
+        }
     }
 }
