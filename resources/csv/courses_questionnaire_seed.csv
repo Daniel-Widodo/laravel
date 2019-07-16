@@ -1,0 +1,44 @@
+no,study_program,course_id,course_name
+1,di,DI1741,Desain Interior 2
+2,di,DI1742,Produk Interior 1
+3,di,DI1743,Komunikasi Desain Interior 2
+4,di,DI1744,Ergonomi 2
+5,di,DI1745,Sustainable Desain
+6,di,DI1746,Utilitas Interior
+7,di,DI1761,Desain Interior 4
+8,di,DI1762,Produk Interior 3
+9,di,DI1763,Komunikasi Desain Interior 4
+10,di,DI1764,Tinjauan Desain Interior
+11,di,DI1765,Manajemen Desain
+12,di,PL1765,Gubahan Ruang Interior
+13,dkv,DKV1741,DKV2 - Identitas Visual
+14,dkv,DKV1742,Tinjauan & Sejarah DKV
+15,dkv,DKV1743,Tipografi Lanjut
+16,dkv,DKV1744,Ilustrasi Lanjut
+17,dkv,DKV1745,Komputer Grafis
+18,dkv,DKV1746,Proses Komunikasi
+19,dkv,DKV1761,DKV4 - Social Campaign
+20,dkv,DKV1762,Grafis Sekuensial
+21,dkv,DKV1763,Infografis
+22,dkv,DKV1764,Audio Visual
+23,dkv,PL1763,Visual Interface Desain
+24,dkf,FC1741,DKF2 - Basic Fashion(Local Wisdom)
+25,dkf,FC1742,Pola Busana 1 
+26,dkf,FC1743,Tinjauan Desain Fashion
+27,dkf,FC1744,Proses Komunikasi
+28,dkf,FC1745,Fashion Writing 2
+29,dkf,FC1746,Tinjauan Pakaian & Kain Tradisional
+30,dkf,FC1761,DKF 4 - Adibusana/Future Fashion
+31,dkf,FC1762,Pola Busana 3
+32,dkf,FC1763,Visual Merchandising Fashion
+33,dkf,FC1764,Trend & Fashion Forecast
+34,dkf,FC1765,Fashion Styling & Photography
+35,dkf,PL1764,Fashion Entrepreneur
+36,tpb,TPB1721,Gambar Bentuk
+37,tpb,TPB1722,Nirmana Dwimatra 2
+38,tpb,TPB1723,Nirmana Trimatra 2
+39,tpb,TPB1724,Komputer Dasar
+40,tpb,TPB1725,Fotografi Dasar
+41,tpb,KU1721,Bahasa Inggris
+42,tpb,KU1722,Pendidikan Kewarganegaraan
+43,umum,KU1741,Studi Budaya Indonesia 2

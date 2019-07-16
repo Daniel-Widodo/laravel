@@ -3,9 +3,9 @@
 use Illuminate\Database\Seeder;
 
 use Maatwebsite\Excel\Facades\Excel;
-use App\Hasil;
+use App\CourseQuestionnaire;
 
-class HasilsTableSeeder extends Seeder
+class CourseQuestionnairesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,17 +14,17 @@ class HasilsTableSeeder extends Seeder
      */
     public function run()
     {
-        $path = 'resources\csv\hasil_data_seed.csv';
+        $path = 'resources\csv\courses_questionnaire_seed.csv';
 
         $data = Excel::load($path)->get();
 
         if($data->count()){
             foreach ($data as $key => $value){
                 
-                $user = Hasil::create([
-                    'jurusan' => $value->jurusan,
-                    'matakuliah_id' => $value->matakuliah_id,
-                    'matakuliah' => $value->matakuliah,
+                $user = CourseQuestionnaire::create([
+                    'study_program' => $value->study_program,
+                    'course_id' => $value->course_id,
+                    'course_name' => $value->course_name,
                 ]);
             }
         }

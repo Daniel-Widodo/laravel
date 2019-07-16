@@ -14,21 +14,21 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="nim" class="col-md-4 col-form-label text-md-right">
+                            <label for="registration_number" class="col-md-4 col-form-label text-md-right">
                                 {{ __('NIM') }}
                             </label>
 
                             <div class="col-md-6">
                                 <input
-                                    id="nim"
+                                    id="registration_number"
                                     type="text"
-                                    class="form-control @error('nim') is-invalid @enderror"
-                                    name="nim"
-                                    value="{{ old('nim') }}"
+                                    class="form-control @error('registration_number') is-invalid @enderror"
+                                    name="registration_number"
+                                    value="{{ old('registration_number') }}"
                                     required
                                     autofocus>
 
-                                @error('nim')
+                                @error('registration_number')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

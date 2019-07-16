@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/pengisian';
+    protected $redirectTo = '/questionnaire';
 
     /**
      * Create a new controller instance.
@@ -39,6 +39,6 @@ class LoginController extends Controller
     
     public function username()
     {
-        return 'nim';
+        return 'registration_number';
     }
 }

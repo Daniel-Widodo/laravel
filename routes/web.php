@@ -19,13 +19,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/pengisian', 'PengisianController@next')->name('pengisian');
-Route::get('/pengisian/next', 'PengisianController@next')->name('pengisian_next');
+Route::get('/questionnaire', 'CoursesQuestionnaireController@next')->name('questionnaire');
+Route::get('/questionnaire/next', 'CoursesQuestionnaireController@next')->name('next_questionnaire');
 
-Route::get('/pengisian/not_active', 'PengisianController@not_active')->name('not_active');
-Route::get('/pengisian/answered_all', 'PengisianController@answered_all')->name('answered_all');
-Route::get('/pengisian/{id}', 'PengisianController@show');
-Route::put('/pengisian/{id}', 'PengisianController@store');
+Route::get('/questionnaire/not_active', 'CoursesQuestionnaireController@not_active')->name('not_active');
+Route::get('/questionnaire/answered_all', 'CoursesQuestionnaireController@answered_all')->name('answered_all');
+Route::get('/questionnaire/{id}', 'CoursesQuestionnaireController@show');
+Route::put('/questionnaire/{id}', 'CoursesQuestionnaireController@store');
 
 
 Route::get('/hasil', 'HasilController@index')->name('hasil');

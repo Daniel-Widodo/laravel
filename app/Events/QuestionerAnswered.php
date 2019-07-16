@@ -10,22 +10,22 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-use App\Pengisian;
+use App\StudentCourse;
 
 class QuestionerAnswered
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $pengisian;
+    public $studentCourse;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Pengisian $pengisian)
+    public function __construct(StudentCourse $studentCourse)
     {
-        $this->pengisian = $pengisian;
+        $this->studentCourse = $studentCourse;
     }
 
     /**

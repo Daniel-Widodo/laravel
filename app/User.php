@@ -15,8 +15,8 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password','nim','tl','pengerjaan'
+    protected $guarded = [
+        'id',
     ];
 
     /**
@@ -39,8 +39,8 @@ class User extends Authenticatable
 
     protected $attributes = [
         'password' => '$2y$10$NkSM3ydbc5Cuq5PUJmIXhu33mkW3o/kKaR6MuD6TFVblLBhkilRfq', //1234
-        'tl' => '1995-01-01',
-        'pengerjaan' => '0',
+        'birthdate' => '1995-01-01',
+        'questionnaire_status' => '0',
     ];
 
 

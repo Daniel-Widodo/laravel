@@ -17,8 +17,12 @@ class MahasiswaController extends Controller
     {
         $users = User::all();
         $user_count = count($users);
-        $count = User::where('pengerjaan','=','1')->count();
-        return view('mahasiswa', ['users' => $users,'user_count'=>$user_count,'count'=>$count]);
+        $count = User::where('questionnaire_status','=','1')->count();
+        return view('mahasiswa', [
+                                    'users' => $users,
+                                    'user_count'=>$user_count,
+                                    'count'=>$count
+                                ]);
     
     }
 

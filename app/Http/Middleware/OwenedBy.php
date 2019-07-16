@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Pengisian;
+use App\CourseQuestionnaire;
 
 class OwenedBy
 {
@@ -16,10 +16,10 @@ class OwenedBy
      */
     public function handle($request, Closure $next)
     {
-        $owner = Pengisian::where('id','=',$request->id)->first()->user_id;
+        $owner = CourseQuestionnaire::where('id','=',$request->id)->first()->user_id;
         
         if($owner != \Auth::user()->id)
-            redirect('pengisian/next');
+            redirect('questionnaire/next');
 
         return $next($request);
     }

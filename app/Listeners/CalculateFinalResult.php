@@ -6,7 +6,7 @@ use App\Events\QuestionerAnswered;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-use App\Hasil;
+use App\CourseQuestionnaire;
 
 class CalculateFinalResult
 {
@@ -28,33 +28,33 @@ class CalculateFinalResult
      */
     public function handle(QuestionerAnswered $event)
     {
-        $pengisian = $event->pengisian;
+        $studentCourse = $event->studentCourse;
         
-        $hasil = Hasil::where('matakuliah_id','=',$pengisian->matakuliah_id)->first();
+        $hasil = CourseQuestionnaire::where('course_id','=',$studentCourse->course_id)->first();
         $hasil->fill([
-            'q1' => $pengisian->q1 + $hasil->q1,
-            'q2' => $pengisian->q2 + $hasil->q2,
-            'q3' => $pengisian->q3 + $hasil->q3,
-            'q4' => $pengisian->q4 + $hasil->q4,
-            'q5' => $pengisian->q5 + $hasil->q5,
-            'q6' => $pengisian->q6 + $hasil->q6,
-            'q7' => $pengisian->q7 + $hasil->q7,
-            'q8' => $pengisian->q8 + $hasil->q8,
-            'q9' => $pengisian->q9 + $hasil->q9,
-            'q10' => $pengisian->q10 + $hasil->q10,
-            'qcount' => $hasil->qcount + 1,
+            'question1' => $studentCourse->question1 + $hasil->question1,
+            'question2' => $studentCourse->question2 + $hasil->question2,
+            'question3' => $studentCourse->question3 + $hasil->question3,
+            'question4' => $studentCourse->question4 + $hasil->question4,
+            'question5' => $studentCourse->question5 + $hasil->question5,
+            'question6' => $studentCourse->question6 + $hasil->question6,
+            'question7' => $studentCourse->question7 + $hasil->question7,
+            'question8' => $studentCourse->question8 + $hasil->question8,
+            'question9' => $studentCourse->question9 + $hasil->question9,
+            'question10' => $studentCourse->question10 + $hasil->question10,
+            'number_answered' => $hasil->number_answered + 1,
         ]);
-        $hasil->qavg = (
-            $hasil->q1 +
-            $hasil->q2 +
-            $hasil->q3 +
-            $hasil->q4 +
-            $hasil->q5 +
-            $hasil->q6 +
-            $hasil->q7 +
-            $hasil->q8 +
-            $hasil->q9 +
-            $hasil->q10) / $hasil->qcount / 10;
+        $hasil->score = (
+            $hasil->question1 +
+            $hasil->question2 +
+            $hasil->question3 +
+            $hasil->question4 +
+            $hasil->question5 +
+            $hasil->question6 +
+            $hasil->question7 +
+            $hasil->question8 +
+            $hasil->question9 +
+            $hasil->question10) / $hasil->number_answered / 10;
         return $hasil->save();
     }
 }

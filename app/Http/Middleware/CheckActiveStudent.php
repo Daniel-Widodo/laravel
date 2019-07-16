@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Pengisian;
+use App\StudentCourse;
 
 class CheckActiveStudent
 {
@@ -17,10 +17,10 @@ class CheckActiveStudent
     public function handle($request, Closure $next)
     {
 
-        $active = Pengisian::where('user_id','=',\Auth::user()->id)->first();
+        $active = StudentCourse::where('user_id','=',\Auth::user()->id)->first();
 
         if (!$active) {
-            return redirect('pengisian/not_active');
+            return redirect('questionnaire/not_active');
         }
         
         return $next($request);

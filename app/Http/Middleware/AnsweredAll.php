@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Pengisian;
+use App\StudentCourse;
 
 class AnsweredAll
 {
@@ -16,12 +16,12 @@ class AnsweredAll
      */
     public function handle($request, Closure $next)
     {
-        $answered_all = Pengisian::where('user_id','=',\Auth::user()->id)->
-                                    where('status','=','0')->                            
+        $answered_all = StudentCourse::where('user_id','=',\Auth::user()->id)->
+                                    where('questionnaire_status','=','0')->                            
                                     first();
 
         if (!$answered_all) {
-            return redirect('pengisian/answered_all');
+            return redirect('questionnaire/answered_all');
         }
         return $next($request);
     }

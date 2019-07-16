@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Hasil;
+use App\CourseQuestionnaire;
 
 class HasilController extends Controller
 {
@@ -16,11 +16,11 @@ class HasilController extends Controller
     {
         
 
-        $di = Hasil::where('jurusan','=','1')->orderBy('qavg', 'desc')->take(3)->get();
-        $dkv = Hasil::where('jurusan','=','2')->orderBy('qavg', 'desc')->take(3)->get();
-        $dkf = Hasil::where('jurusan','=','3')->orderBy('qavg', 'desc')->take(3)->get();
-        $tpb = Hasil::where('jurusan','=','4')->orderBy('qavg', 'desc')->take(3)->get();
-        $umum = Hasil::where('jurusan','=','5')->orderBy('qavg', 'desc')->take(3)->get();
+        $di = CourseQuestionnaire::where('study_program','=','di')->orderBy('score', 'desc')->take(3)->get();
+        $dkv = CourseQuestionnaire::where('study_program','=','dkv')->orderBy('score', 'desc')->take(3)->get();
+        $dkf = CourseQuestionnaire::where('study_program','=','dkf')->orderBy('score', 'desc')->take(3)->get();
+        $tpb = CourseQuestionnaire::where('study_program','=','tpb')->orderBy('score', 'desc')->take(3)->get();
+        $umum = CourseQuestionnaire::where('study_program','=','umum')->orderBy('score', 'desc')->take(3)->get();
 
         //return $di;
         return view('hasil',[

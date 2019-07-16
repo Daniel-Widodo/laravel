@@ -29,9 +29,9 @@
                       @foreach ($users as $key=>$user)
                         <tr>
                           <th scope="row">{{ ++$key }}</th>
-                          <td>{{$user->nim}}</td>
+                          <td>{{$user->registration_number}}</td>
                           <td>{{$user->name}}</td>
-                          @switch($user->pengerjaan)
+                          @switch($user->questionnaire_status)
                               @case(1)
                                   <td><i class="material-icons" style="color:black">check_circle</i></td>
                                   @break

@@ -3,9 +3,9 @@
 use Illuminate\Database\Seeder;
 
 use Maatwebsite\Excel\Facades\Excel;
-use App\Pengisian;
+use App\StudentCourse;
 
-class PengisiansTableSeeder extends Seeder
+class StudentCoursesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,17 +15,17 @@ class PengisiansTableSeeder extends Seeder
     public function run()
     {
         //
-        $path = 'resources\csv\pengisian_data_seed.csv';
+        $path = 'resources\csv\student_courses_seed.csv';
 
         $data = Excel::load($path)->get();
 
         if($data->count()){
             foreach ($data as $key => $value){
                 
-                $user = Pengisian::create([
+                $user = StudentCourse::create([
                     'user_id' => $value->user_id,
-                    'matakuliah_id' => $value->matakuliah_id,
-                    'matakuliah' => $value->matakuliah,
+                    'course_id' => $value->course_id,
+                    'course_name' => $value->course_name,
                 ]);
             }
         }

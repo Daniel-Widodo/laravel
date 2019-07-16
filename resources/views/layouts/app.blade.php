@@ -44,7 +44,7 @@
                             <a class="nav-link" href="{{ route('mahasiswa') }}">{{ __('Mahasiswa') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('pengisian') }}">{{ __('Pengisian') }}</a>
+                            <a class="nav-link" href="{{ route('questionnaire') }}">{{ __('Pengisian') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('hasil') }}">{{ __('Hasil') }}</a>

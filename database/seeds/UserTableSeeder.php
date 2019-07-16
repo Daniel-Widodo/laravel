@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 use Maatwebsite\Excel\Facades\Excel;
 use App\User;
 
-class MahasiswasTableSeeder extends Seeder
+class UserTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class MahasiswasTableSeeder extends Seeder
     public function run()
     {
         //
-        $path = 'resources\csv\mahasiswa_data_seed.csv';
+        $path = 'resources\csv\user_seed.csv';
 
         $data = Excel::load($path)->get();
 
@@ -26,8 +26,8 @@ class MahasiswasTableSeeder extends Seeder
                     'id' => $value->rec,
                     'name' => $value->name,
                     'email' => $value->email,
-                    'nim' => $value->nim,
-                    'tl' => $value->tl,
+                    'registration_number' => $value->registration_number,
+                    'birthdate' => $value->birthdate,
                 ]);
             }
         }

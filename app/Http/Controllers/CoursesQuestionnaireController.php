@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Pengisian;
+use App\CourseQuestionnaire;
 use App\User;
-use App\Hasil;
+use App\StudentCourse;
 use App\Events\QuestionerAnswered;
 use Illuminate\Http\Request;
 
-class PengisianController extends Controller
+class CoursesQuestionnaireController extends Controller
 {
 
     public function __construct()
@@ -28,12 +28,12 @@ class PengisianController extends Controller
     public function show(Request $request)
     {
         $user = \Auth::user();
-        $current = Pengisian::where('id','=',$request->id)->first();
+        $current = StudentCourse::where('id','=',$request->id)->first();
 
-        $pengisians = Pengisian::where('user_id','=',$user->id)->get();
+        $questionnaire = StudentCourse::where('user_id','=',$user->id)->get();
         return view('pengisian',[
             'user' => $user,
-            'pengisians' => $pengisians,
+            'pengisians' => $questionnaire,
             'pengisian_selanjutnya' => $current,
         ]);
         
@@ -41,10 +41,10 @@ class PengisianController extends Controller
 
     public function next()
     {
-        $selanjutnya = Pengisian::where('user_id','=',\Auth::user()->id)->
-                                    where('status','=','0')->
+        $selanjutnya = StudentCourse::where('user_id','=',\Auth::user()->id)->
+                                    where('questionnaire_status','=','0')->
                                     first();
-        return redirect('pengisian/'.$selanjutnya->id);
+        return redirect('questionnaire/'.$selanjutnya->id);
     }
 
     public function not_active()
@@ -55,21 +55,21 @@ class PengisianController extends Controller
     public function answered_all()
     {
         $user = User::find(\Auth::user()->id);
-        $user->pengerjaan = 1;
+        $user->questionnaire_status = 1;
         $user->save();
         return view('answered_all');
     }
 
     public function store(Request $request)
     {
-        $pengisian = Pengisian::find($request->segment(2));
+        $pengisian = StudentCourse::find($request->segment(2));
         $pengisian->fill($request->except('form_questioner'))->
-                    fill(['status'=> 1])->
+                    fill(['questionnaire_status'=> 1])->
                     save();
 
         event(new QuestionerAnswered($pengisian));
         
-        return redirect('pengisian/next');
+        return redirect('questionnaire/next');
     }
 
 }
