@@ -19,8 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/questionnaire', 'CoursesQuestionnaireController@next')->name('questionnaire');
-Route::get('/questionnaire/next', 'CoursesQuestionnaireController@next')->name('next_questionnaire');
+Route::get('/questionnaire', 'CoursesQuestionnaireController@index')->name('questionnaire');
 
 Route::get('/questionnaire/not_active', 'CoursesQuestionnaireController@not_active')->name('not_active');
 Route::get('/questionnaire/answered_all', 'CoursesQuestionnaireController@answered_all')->name('answered_all');

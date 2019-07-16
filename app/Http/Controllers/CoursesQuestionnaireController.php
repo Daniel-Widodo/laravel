@@ -7,6 +7,7 @@ use App\User;
 use App\StudentCourse;
 use App\Events\QuestionerAnswered;
 use Illuminate\Http\Request;
+use Auth;
 
 class CoursesQuestionnaireController extends Controller
 {
@@ -22,7 +23,7 @@ class CoursesQuestionnaireController extends Controller
 
     public function index()
     {
-        return "anda mahasiswa aktif";
+        return redirect('questionnaire/'.$this->next_questionnaries() );
     }
 
     public function show(Request $request)
@@ -30,35 +31,29 @@ class CoursesQuestionnaireController extends Controller
         $user = \Auth::user();
         $current = StudentCourse::where('id','=',$request->id)->first();
 
-        $questionnaire = StudentCourse::where('user_id','=',$user->id)->get();
+        $questionnaires = StudentCourse::where('user_id','=',$user->id)->get();
         return view('pengisian',[
             'user' => $user,
-            'pengisians' => $questionnaire,
-            'pengisian_selanjutnya' => $current,
+            'questionnaires' => $questionnaires,
+            'current_questionnaire' => $current,
         ]);
-        
     }
 
-    public function next()
-    {
-        $selanjutnya = StudentCourse::where('user_id','=',\Auth::user()->id)->
-                                    where('questionnaire_status','=','0')->
-                                    first();
-        return redirect('questionnaire/'.$selanjutnya->id);
-    }
 
     public function not_active()
     {
         return view('not_active');
     }
 
+
     public function answered_all()
     {
-        $user = User::find(\Auth::user()->id);
-        $user->questionnaire_status = 1;
-        $user->save();
-        return view('answered_all');
+        if(!$this->next_questionnaries())
+            return view('answered_all');
+        return redirect('questionnaire/'. $this->next_questionnaries())->
+                    with('status', 'Halaman yang anda maksud tidak tersedia!');
     }
+
 
     public function store(Request $request)
     {
@@ -68,8 +63,14 @@ class CoursesQuestionnaireController extends Controller
                     save();
 
         event(new QuestionerAnswered($pengisian));
-        
-        return redirect('questionnaire/next');
+
+        return redirect('questionnaire/'.$this->next_questionnaries())->
+                with('status', 'Kuesioner untuk matakuliah: '. $pengisian->course_name .'. telah tersimpan!');
+    }
+
+
+    private function next_questionnaries(){
+        return resolve('GetNextQuestionnaire')->from_id(\Auth::user()->id);
     }
 
 }

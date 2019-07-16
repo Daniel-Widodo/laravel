@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use App\StudentCourse;
+use App\User;
 
 class AnsweredAll
 {
@@ -16,11 +17,13 @@ class AnsweredAll
      */
     public function handle($request, Closure $next)
     {
-        $answered_all = StudentCourse::where('user_id','=',\Auth::user()->id)->
-                                    where('questionnaire_status','=','0')->                            
-                                    first();
+        $next_questionnaire = resolve('GetNextQuestionnaire')->from_id(\Auth::user()->id);
 
-        if (!$answered_all) {
+        if (!$next_questionnaire) {
+            $user = User::find(\Auth::user()->id);
+            $user->questionnaire_status = 1;
+            $user->save();
+
             return redirect('questionnaire/answered_all');
         }
         return $next($request);

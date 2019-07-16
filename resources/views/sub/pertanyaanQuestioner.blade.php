@@ -1,4 +1,4 @@
-<form action="/questionnaire/{{$pengisian_selanjutnya->id}}" method="POST" name="form_questioner">
+<form action="/questionnaire/{{$current_questionnaire->id}}" method="POST" name="form_questioner">
   @method('PUT')
   @csrf
 

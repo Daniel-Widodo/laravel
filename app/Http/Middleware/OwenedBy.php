@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\CourseQuestionnaire;
+use App\StudentCourse;
 
 class OwenedBy
 {
@@ -16,10 +16,11 @@ class OwenedBy
      */
     public function handle($request, Closure $next)
     {
-        $owner = CourseQuestionnaire::where('id','=',$request->id)->first()->user_id;
+        $owner = StudentCourse::where('id','=',$request->id)->first()->user_id;
         
         if($owner != \Auth::user()->id)
-            redirect('questionnaire/next');
+            return redirect('questionnaire/'.resolve('GetNextQuestionnaire')->from_id(\Auth::user()->id) )->
+                            with('status', 'Halaman yang anda maksud tidak tersedia!'); //next
 
         return $next($request);
     }
