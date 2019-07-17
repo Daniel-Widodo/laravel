@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->char('registration_number',11)->unique();
             $table->date('birthdate');
             $table->boolean('questionnaire_status')->default(0);
+            $table->smallInteger('active_status')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

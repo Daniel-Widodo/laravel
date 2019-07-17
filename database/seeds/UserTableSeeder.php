@@ -28,6 +28,7 @@ class UserTableSeeder extends Seeder
                     'email' => $value->email,
                     'registration_number' => $value->registration_number,
                     'birthdate' => $value->birthdate,
+                    'active_status' => 0,
                 ]);
             }
         }

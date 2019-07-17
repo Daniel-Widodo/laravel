@@ -50,8 +50,8 @@ class User extends Authenticatable
      * memiliki relasi dengan pengisian
      * 
      */
-    public function pengisian()
+    public function studentCourse()
     {
-        return $this->hasMany('App\Pengisian');
+        return $this->hasMany('App\StudentCourse');
     }
 }

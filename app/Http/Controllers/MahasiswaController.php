@@ -15,9 +15,9 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $users = User::where('active_status','=','1')->get();
         $user_count = count($users);
-        $count = User::where('questionnaire_status','=','1')->count();
+        $count = $users->where('questionnaire_status','=','1')->count();
         return view('mahasiswa', [
                                     'users' => $users,
                                     'user_count'=>$user_count,
