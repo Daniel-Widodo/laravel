@@ -26,9 +26,10 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <?php $i = $users->firstItem()?>
                       @foreach ($users as $key=>$user)
                         <tr>
-                          <th scope="row">{{ ++$key }}</th>
+                          <th scope="row">{{ $i++ }}</th>
                           <td>{{$user->registration_number}}</td>
                           <td>{{$user->name}}</td>
                           @switch($user->questionnaire_status)
@@ -60,11 +61,24 @@
                       <h1 class="display-3">{{number_format($count/$user_count*100, 2, '.', ',')}}%</h1>
                       
                     </div>
+
                     <div class="col-md-2"><br>
                       Responden : {{$count}}<br>
                       Total Mahasiswa : {{$user_count}} 
                     </div>
+
                   </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5" align="right">
+                      <div class="float-right">
+                        {{ $users->links() }}
+                      </div>
+                    </div>
                 </div>
 
             </div>
