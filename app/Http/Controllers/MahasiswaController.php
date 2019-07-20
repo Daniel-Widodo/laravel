@@ -16,12 +16,10 @@ class MahasiswaController extends Controller
     public function index()
     {
         $users = User::where('active_status','=','1')->paginate(15);
-        $user_count = $users->total();
-        $count = $users->where('questionnaire_status','=','1')->count();
+        $count = User::where('active_status','=','1')->where('questionnaire_status','=','1')->count();
         $users->withPath('mahasiswa');
         return view('mahasiswa', [
                                     'users' => $users,
-                                    'user_count'=>$user_count,
                                     'count'=>$count
                                 ]);
     

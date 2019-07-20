@@ -58,13 +58,13 @@
 
                     </div>
                     <div class="col-md-3" align="right">
-                      <h1 class="display-3">{{number_format($count/$user_count*100, 2, '.', ',')}}%</h1>
+                      <h1 class="display-3">{{number_format($count/$users->total()*100, 2, '.', ',')}}%</h1>
                       
                     </div>
 
                     <div class="col-md-2"><br>
                       Responden : {{$count}}<br>
-                      Total Mahasiswa : {{$user_count}} 
+                      Total Mahasiswa : {{$users->total()}} 
                     </div>
 
                   </div>
