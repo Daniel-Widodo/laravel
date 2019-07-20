@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 
 use Maatwebsite\Excel\Facades\Excel;
 use App\StudentCourse;
+use App\Imports\StudentCoursesImport;
 
 class StudentCoursesTableSeeder extends Seeder
 {
@@ -17,17 +18,6 @@ class StudentCoursesTableSeeder extends Seeder
         //
         $path = 'resources\csv\student_courses_seed.csv';
 
-        $data = Excel::load($path)->get();
-
-        if($data->count()){
-            foreach ($data as $key => $value){
-                
-                $user = StudentCourse::create([
-                    'user_id' => $value->user_id,
-                    'course_id' => $value->course_id,
-                    'course_name' => $value->course_name,
-                ]);
-            }
-        }
+        Excel::import(new StudentCoursesImport, $path);
     }
 }

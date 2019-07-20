@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
-use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Concerns\ToModel;
 use App\User;
+use App\Imports\UsersImport;
 
 class UserTableSeeder extends Seeder
 {
@@ -17,20 +18,6 @@ class UserTableSeeder extends Seeder
         //
         $path = 'resources\csv\user_seed.csv';
 
-        $data = Excel::load($path)->get();
-
-        if($data->count()){
-            foreach ($data as $key => $value){
-                
-                $user = User::create([
-                    'id' => $value->rec,
-                    'name' => $value->name,
-                    'email' => $value->email,
-                    'registration_number' => $value->registration_number,
-                    'birthdate' => $value->birthdate,
-                    'active_status' => 0,
-                ]);
-            }
-        }
+        Excel::import(new UsersImport, $path);
     }
 }
