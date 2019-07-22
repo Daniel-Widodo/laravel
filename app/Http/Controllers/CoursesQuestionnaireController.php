@@ -8,6 +8,7 @@ use App\StudentCourse;
 use App\Events\QuestionerAnswered;
 use Illuminate\Http\Request;
 use Auth;
+use App\Http\Requests\StoreCourseQuestionnaire;
 
 class CoursesQuestionnaireController extends Controller
 {
@@ -55,8 +56,10 @@ class CoursesQuestionnaireController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(StoreCourseQuestionnaire $request)
     {
+        $validated = $request->validated();
+
         $pengisian = StudentCourse::find($request->segment(2));
         $pengisian->fill($request->except('form_questioner'))->
                     fill(['questionnaire_status'=> 1])->
