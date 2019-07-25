@@ -16,7 +16,7 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         //
-        $path = 'resources\csv\user_seed.csv';
+        $path = resource_path('\csv\user_seed.csv');
 
         Excel::import(new UsersImport, $path);
     }
