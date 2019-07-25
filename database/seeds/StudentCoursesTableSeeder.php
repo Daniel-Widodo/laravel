@@ -16,7 +16,7 @@ class StudentCoursesTableSeeder extends Seeder
     public function run()
     {
         //
-        $path = resource_path('\csv\student_courses_seed.csv');
+        $path = '\csv\student_courses_seed.csv';
 
         Excel::import(new StudentCoursesImport, $path);
     }
